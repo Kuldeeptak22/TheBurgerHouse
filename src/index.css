@@ -1,0 +1,697 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+  --chocolate-color: #3d2514;
+  --red-color: #bf2222;
+  --yellow-color: #ffc045;
+  --alfa : 'Alfa Slab One', cursive;
+  --bebas : 'Bebas Neue', cursive;
+  --monte : 'Montserrat', sans-serif;
+}
+*{
+  color: var(--chocolate-color);
+}
+body {
+  overflow-x: hidden; 
+}
+
+/* ---------- Header.js -------------  */
+.header{
+  background-image: url('./assets/images/background.png');
+  height: 120vh;
+  box-shadow: 1rem 1rem 2rem gray
+} 
+
+/* ============ Navbar.js ==========  */
+.scooter{
+  font-family: var(--monte);
+}
+.callme:hover{
+  scale: 120%;
+  color: var(--red-color);
+}
+.menu{
+  font-family: var(--bebas);
+}
+.menu li:hover{
+  scale: 120%;
+  transition: 400ms;
+  color: var(--red-color);
+}
+.menuIcon{
+  display: none;
+}
+.crossIcon{
+  display: none;
+}
+.crossing{
+  display: none;
+}
+/* ============ Hero section ==============  */
+.border_line{
+  border: 2px dashed var(--chocolate-color);
+  display: inline-block;
+  font-family: var(--bebas);
+  letter-spacing: 0.1rem;
+}
+.mainHeading{
+  font-family: var(--alfa);
+  letter-spacing: 0.3rem;
+  text-shadow: 2px 2px white;
+}
+.Burgers .burder1{
+  z-index: 1;
+  position: relative;
+  top: -14rem;
+}
+.Burgers .french{
+  position: relative;
+  right: 7rem;
+  z-index: 0;
+  bottom: 2rem;
+}
+.Burgers .coldDrinks{
+  position: relative;
+  top: -34rem;
+  left: 10rem;
+}
+.Burgers .price{
+  position: relative;
+  top: -38rem;
+  right: 5rem; 
+  z-index: 2;
+  background-image: url('./assets/images/Ellipse.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: 2px dashed white;
+  outline-offset: -0.5rem;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.price p{
+  font-family: var(--bebas);
+}
+p .only{
+  letter-spacing: 0.4rem;
+}
+
+/* ============ Middle Section ==============  */
+/* ------ Slogan ---------------  */
+.slogan .burger2{
+  background-image: url('./assets/images/BurgerImage2.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 70vh;
+  width: 60vw;
+}
+.burger2 .try{
+  font-family: var(--bebas);
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+.burger2 .most{
+  font-family: var(--bebas);
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+.dubleBurger{
+  font-family: var(--bebas);
+}
+.burger3 .tryit{
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+.burger3 .fun{
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+.burger3 .taste{
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+.burger4 .today{
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+.burger4 .fresh{
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+.dubleBurger .burger3{
+  background-image: url('./assets/images/burgerImage3.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 40vh;
+  width: 40vw;
+}
+.dubleBurger .burger4{
+  background-image: url('./assets/images/burgerImage4.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 33vh;
+  width: 40vw;
+  margin-top: 1.5rem;
+}
+/* ----------- Choose and Enjoy -----------  */
+.choose .always{
+  font-family: var(--bebas);
+}
+.choose .Enjoy{
+  font-family: var(--alfa);
+}
+.choose .lorem{
+  font-family: var(--monte);
+}
+ /* ----------- Order Now ------------  */
+.ordernow .dolor{
+  font-family: var(--bebas);
+}
+.ordernow .ord_2{
+  font-family: var(--monte);
+}
+.ordernow .orderNowButton{
+  font-family: var(--alfa);
+  background-color: var(--red-color);
+}
+.middle .middleburger{
+  margin: 0 auto;
+}
+.box1:hover{
+  scale: 110%;
+  transition: 500ms;
+  background-color: rgb(243, 217, 217);
+  border-radius: 1rem;
+}
+/* ----------- upcomingEvents -----------  */
+.upcomingEvents{
+  box-shadow: 1rem 1rem 2rem rgb(190, 188, 188);
+}
+.upcomingEvents .b_1{
+  width: 46vw;
+}
+.upcomingEvents .discover{
+  font-family: var(--bebas);
+}
+.upcomingEvents .upcoming{
+  font-family: var(--alfa);
+}
+.upcomingEvents .upcominLorem{
+  font-family: var(--monte);
+}
+.check .radio{
+  margin: 0 0.2rem;
+  border: none;
+  color:  rgb(198, 194, 194);
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgb(198, 194, 194);
+}
+.check .radio:hover{
+  background: #ffc045;
+}
+/* ----------------- BookYourTable -------------------  */
+
+.BookYourTable .reserve{
+  font-family: var(--bebas);
+  letter-spacing: 0.4rem;
+  display: block;
+  text-align: center;
+}
+.BookYourTable .book{
+  font-family: var(--alfa);
+  letter-spacing: 0.3rem;
+  display: block;
+  text-align: center;
+}
+.burga .Burger7{
+  position: absolute;
+  left: -5rem;
+  width: 30vw;
+}
+.bot .bottle{
+  margin-top: 14rem;
+  position: relative;
+  width: 19vw;
+  margin-left: 7rem;
+}
+
+.BookYourTable .form{
+  display: flex;
+  flex-direction: column;
+  margin-left: -22rem;
+}
+.form .inp{
+  border-color: rgb(50, 49, 49);
+  padding-right: 4.5rem;
+}
+.BookYourTable .btnFindATable{
+  margin: 0 auto;
+  padding: 0.6rem 5.4rem;
+  background-color: var(--red-color);
+  color: white;
+  font-family: var(--alfa);
+}
+
+.BookYourTable .burgerPlate{
+  position: absolute;
+  right: 0rem;
+  top: 205em;
+  width: 30vw;
+}
+
+/* ============= Footer ==================  */
+.finalComponent{
+  background-image: url('./assets/images/bottomBackground.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+.finalComponent .contact{
+  display: flex;
+  margin: 1rem auto;
+  font-family: var(--bebas);
+}
+.compony{
+  font-family: var(--bebas);
+}
+
+/* =========== Responsiveness queries =========  */
+/* ================================================== */
+
+ @media only screen and (max-width: 1500px){
+  .header{
+    height: 115vh;
+  }
+  .slogan .burger2{
+    width: 70vw;
+  }
+  .BookYourTable .burgerPlate {
+      position: absolute;
+      right: 0rem;
+      top: 186rem;
+      width: 25vw;
+}
+  .finalComponent{
+    height: 92vh;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .header{
+    height: 115vh;
+  }
+ .Burgers{
+  margin-left: 6rem;
+ }
+ .slogan{
+  margin-top: -2rem;
+}
+.dubleBurger .burger3{
+  height: 38vh;
+}
+.BookYourTable .burgerPlate {
+  display: none;
+}
+.BookYourTable .form {
+  margin-left: -17rem;
+}
+.finalComponent{
+  background-size: cover;
+}
+.bottomLogo{
+  margin: 0 auto;
+  width: 25vw;
+}
+.finalComponentInner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.final-text{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text_lorems{
+  margin-left: 11rem;
+  width: 100%;
+}
+.contacta{
+  margin-top: 5rem;
+}
+}
+
+@media only screen and (max-width: 878px) {
+  .logo{
+    height: 6vh;
+  }
+  .header{
+    height: 170vh;
+  }
+  .burgerHouse{
+    flex-direction: column;
+    margin: 0 5rem;
+  }
+  .scooter{
+    display: none;
+  }
+  .menu{
+  display: none;
+  }
+  .show{
+    display: block;
+    overflow-x: hidden;
+  
+  }
+  .show ul{
+    flex-direction: column;
+    position: absolute;
+    background-color: #bf2222;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 3;
+    right: 0rem;
+  }
+  .show ul li{
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px #1a1d1b;
+  }
+  .menuIcon{
+    display: block;
+    cursor: pointer;
+  }
+  .crossIconShow{
+    display: block;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .crossing{
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  .slogan{
+    flex-direction: column;
+  }
+  .slogan .burger2{
+    width: 100%;
+    border-radius: 0 0 0.6rem 0.6rem;
+    height: 78vh;
+  }
+  .dubleBurger .burger3{
+    width: 100%;
+    margin-left: -1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    height: 35vh;
+  }
+  .dubleBurger .burger4{
+    width: 100%;
+    margin-left: -1.5rem;
+  }
+  .ordernow{
+    flex-direction: column;
+  }
+  .ordernow .box1{
+    margin-bottom: 2rem;
+  }
+  .ordernow .firstBurger{
+    margin: 0 auto;
+  }
+  .middle .middleburger{
+    width: 50vw;
+  }
+  .upcomingEvents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .upcomingEvents .burger6{
+    height: 39vh;
+    margin: 1rem auto;
+  }
+  .upcomingEvents .b_1{
+    text-align: center;
+    width: 64vw;
+    padding: 0rem 0rem;
+  }
+  .BookYourTable  .bot-bug{
+    display: none;
+  }
+  .BookYourTable{
+    flex-direction: column;
+  }
+  .BookYourTable .burgerPlate{
+    display: none;
+  }
+  .BookYourTable .form {
+    margin: 0 auto;
+    text-align: center;
+}
+.BookYourTable .book{
+  font-size: 2.5rem;
+}
+.BookYourTable .inp {
+  padding-right: 2rem;
+}
+.BookYourTable .btnFindATable{
+  padding: 0.6rem 4rem;
+}
+.contacta{
+  margin-left: 8rem;
+}
+.copyright{
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width: 577px) {
+  .header{
+    height: 170vh;
+  }
+  .logo{
+    height: 6vh;
+  }
+  .burgerHouse{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Burgers{
+  margin-left: 8rem;
+  margin-top: 10rem;
+}
+.slogan .burger2{
+  width: 80vw;
+  height: 45vh;
+  margin: 0 auto;
+}
+.slogan .burger3{
+  width: 80vw;
+  height: 22vh;
+  margin: 0 -0.5rem;
+}
+.slogan .burger4{
+  width: 80vw;
+  margin: 0 -0.5rem;
+}
+.middle .middleburger{
+  width: 50vw;
+}
+.ordernow .box1{
+  margin-bottom: 5rem;
+}
+.upcomingEvents{
+  width: 100%;
+  margin: 0 auto;
+}
+.upcomingEvents .burger6{
+  height: 27vh;
+}
+.BookYourTable .form {
+  margin: 15rem 0;
+}
+.form  .formInput{
+  flex-direction: column;
+}
+.BookYourTable .inp2{
+  margin-top: -1rem;
+}
+.BookYourTable .inp{
+  padding-right: 11.5rem;
+}
+.BookYourTable .book{
+  font-size: 2rem;
+}
+.text_lorems {
+  margin-left: 7rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 35vw;
+}
+.finalComponent {
+  height: 110vh;
+}
+}
+
+@media only screen and (max-width: 466px) {
+  .header{
+    height: 100vh;
+  }
+  .logo{
+    height: 5vh;
+  }
+  .Burgers{
+  display: none;
+}
+.slogan{
+  margin: 0 auto;
+}
+.slogan .burger2{
+  width: 80vw;
+  margin-top: 0rem;
+}
+.slogan .burger3{
+  width: 80vw;
+}
+.slogan .burger4{
+  width: 80vw;
+}
+.middle .middleburger{
+  width: 100%;
+}
+.burgerHouse {
+  margin: 9rem auto;
+}
+.finalComponent {
+  height: 136vh;
+
+}
+}
+
+@media only screen and (max-width: 415px) {
+  .header{
+    height: 100vh;
+  }
+  .burgerHouse .mainHeading h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .slogan .burger2{
+    height: 33vh;
+  }
+  .burger2 .try{
+    font-size: 1rem;
+  }
+  .burger2 .most{
+    font-size: 1.4rem;
+  }
+  .slogan .burger3{
+    background-size: contain;
+    background-position: 0vh 4vw;
+    margin: 0px -1rem;
+  }
+  .burger3 .tryit{
+    font-size: 1rem;
+  }
+  .burger3 .fun{
+    font-size: 1.5rem;
+  }
+  .burger3 .taste{
+    font-size: 1.5rem;
+  }
+  .slogan .burger4{
+     width: 80vw;
+     margin: 0px -1rem;
+  }
+.burger4 .today{
+    font-size: 1rem
+  }
+.burger4 .fresh{
+    font-size: 1.5rem
+  }
+  .ordernow .cheese{
+    font-size: 2rem;
+  }
+  .upcomingEvents .upcoming{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .upcomingEvents .upcominLorem{
+    font-size: 0.8rem;
+  }
+  .upcomingEvents .burger6{
+    height: 20vh;
+  }
+  .BookYourTable .inp {
+    padding-right: 6.5rem;
+}
+.BookYourTable .book{
+  font-size: 1.6rem;
+}
+.finalComponent {
+  height: 132vh;
+  margin-left: 2rem;
+    margin-right: 2rem;
+}
+.bottomLogo {
+  margin: 0 auto;
+  width: 38vw;
+}
+.address{
+  font-size: 1rem;
+}
+.mail{
+  font-size: 1rem;
+}
+.compo{
+  text-align: center;
+}
+.compony{
+  font-size: 1rem;
+}
+.social{
+  margin-top: 5rem;
+}
+}
+
+@media only screen and (max-width: 306px) {
+  .burgerHouse .mainHeading h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+.week {
+  font-size: 2rem;
+  line-height: 1;
+}
+.BookYourTable .inp {
+  padding-right: 2.5rem;
+}
+.Navbar{
+  flex-direction: column;
+}
+.menuIcon {
+ margin: 1rem 0rem;
+}
+}
